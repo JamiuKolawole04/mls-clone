@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AOS from "aos";                             
-import "aos/dist/aos.css"; // You can also use <link> for styles
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 // ..
@@ -11,8 +11,16 @@ AOS.init({
   once: false,
 });
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    index: true,
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
