@@ -6,6 +6,12 @@
 /* ========================== HERO STYLES =================================== */
 @import url(./hero.css);
 
+/* ========================= SEARCH  ESTATE STYLES =================================== */
+@import url(./estate.css);
+
+/* ======================== SEARCH ESTATE FORM STYLES ================================= */
+@import url(./search-estate-form.css);
+
 :root {
   --font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
@@ -15,9 +21,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   --mainColor: #ffffff;
+  --secondary-white: #e5e5e5;
   --mainBrown: #808080;
   --hoverLink: #37a000;
   --mainGreen: #399805;
+  --secondaryBrown: #5a5a5a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

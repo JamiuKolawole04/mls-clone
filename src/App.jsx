@@ -5,9 +5,7 @@ function App() {
   document.title = "MLS Property Website";
   return (
     <main>
-      <div>
-        <Home />
-      </div>
+      <Home />
     </main>
   );
 }

@@ -1,6 +1,7 @@
-import React from "react";
+import { SearchListingBtn } from "./searchListingBtn";
 
 export const Hero = () => {
+  const content = "search listings";
   return (
     <section className="hero d-flex justify-center center-text fd-column">
       <h2>
@@ -9,7 +10,7 @@ export const Hero = () => {
       <p>Your Trusted Real Estate Source</p>
 
       <div className="center-text">
-        <button className="search-listing__btn">search listings</button>
+        <SearchListingBtn content={content} />
       </div>
     </section>
   );
