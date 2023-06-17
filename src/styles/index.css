@@ -3,8 +3,11 @@
 /*=========================== HEADERS STYLES =============================== */
 @import url(./header.css);
 
+/* ========================== HERO STYLES =================================== */
+@import url(./hero.css);
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,6 +17,7 @@
   --mainColor: #ffffff;
   --mainBrown: #808080;
   --hoverLink: #37a000;
+  --mainGreen: #399805;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +32,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 a {
@@ -44,16 +49,26 @@ body {
   background-color: var(--mainColor);
 }
 
-main {
-  margin: 0 auto;
-  padding: 12px;
-  max-width: 1200px;
-}
-
 .d-flex {
   display: flex;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.fd-column {
+  flex-direction: column;
 }
